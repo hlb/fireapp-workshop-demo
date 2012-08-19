@@ -1,0 +1,10 @@
+<h1>Blog</h1>
+<% 10.times do %>
+<article>
+	<header>
+		<h1><%= zh_lorem_sentence %></h1>
+		<p>Published: <time pubdate="pubdate"><%= lorem_date("%Y-%m-%d", 2008..2012) %></time></p>
+	</header>
+	<p><%= zh_lorem_paragraphs 10 %></p>
+</article>
+<% end %>
