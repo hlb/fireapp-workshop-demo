@@ -1,0 +1,39 @@
+@import "compass/utilities";
+@import "icons/*.png";
+@include all-icons-sprites;
+
+body {
+	background: #f1f1f1;
+	font: 16px/1.5 sans-serif;
+}
+
+.container {
+    width: 760px;
+    margin: 40px auto;
+}
+
+.icon {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+}
+
+header[role="banner"] nav {
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+	li {
+		list-style: none;
+		display: inline-block;
+		margin: 0 20px;
+		text-align: center;
+		a {
+			@include hover-link;
+		}
+		.icon {
+			display: block;
+			margin: 0 auto;
+		}
+	}
+}
